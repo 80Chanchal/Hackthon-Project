@@ -1,4 +1,4 @@
-# WebXR Whiteboard
+# WebXR Whiteboard Project
 
 A virtual whiteboard application built with Unity and WebXR, allowing users to draw in both desktop and VR environments.
 
@@ -56,4 +56,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 - Built by Chanchal (GitHub: @80Chanchal)
 - WebXR API and standards
-- Unity Technologies 
+- Unity Technologies
