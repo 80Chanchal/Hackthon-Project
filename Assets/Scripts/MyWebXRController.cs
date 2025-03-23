@@ -4,7 +4,7 @@ namespace MyWebXR
 {
     public class WebXRController : MonoBehaviour
     {
-        [SerializeField] private WebXRControllerHandedness controllerHandedness = WebXRControllerHandedness.RIGHT;
+        [SerializeField] public WebXRControllerHandedness controllerHandedness = WebXRControllerHandedness.RIGHT;
         [SerializeField] private WebXRManager webXRManager;
         
         [Header("Visual References")]
@@ -21,7 +21,8 @@ namespace MyWebXR
 
         private WebXRControllerData controllerData = new WebXRControllerData();
         
-        public WebXRControllerHandedness controllerHandedness => this.controllerHandedness;
+        // Renamed property to avoid conflict with the field
+        public WebXRControllerHandedness HandednessType => controllerHandedness;
         
         private void Start()
         {

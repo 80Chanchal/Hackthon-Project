@@ -26,11 +26,11 @@ public class WebXRSettings : MonoBehaviour
             
             foreach (MyWebXR.WebXRController controller in controllers)
             {
-                if (controller.controllerHandedness == MyWebXR.WebXRControllerHandedness.LEFT)
+                if (controller.HandednessType == MyWebXR.WebXRControllerHandedness.LEFT)
                 {
                     leftController = controller;
                 }
-                else if (controller.controllerHandedness == MyWebXR.WebXRControllerHandedness.RIGHT)
+                else if (controller.HandednessType == MyWebXR.WebXRControllerHandedness.RIGHT)
                 {
                     rightController = controller;
                 }

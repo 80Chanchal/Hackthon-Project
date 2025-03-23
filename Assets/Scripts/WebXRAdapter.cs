@@ -40,11 +40,11 @@ public class WebXRAdapter : MonoBehaviour
             MyWebXR.WebXRController[] controllers = FindObjectsOfType<MyWebXR.WebXRController>();
             foreach (MyWebXR.WebXRController controller in controllers)
             {
-                if (controller.controllerHandedness == MyWebXR.WebXRControllerHandedness.LEFT)
+                if (controller.HandednessType == MyWebXR.WebXRControllerHandedness.LEFT)
                 {
                     leftWebXRController = controller;
                 }
-                else if (controller.controllerHandedness == MyWebXR.WebXRControllerHandedness.RIGHT)
+                else if (controller.HandednessType == MyWebXR.WebXRControllerHandedness.RIGHT)
                 {
                     rightWebXRController = controller;
                 }
