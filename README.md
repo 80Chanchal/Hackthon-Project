@@ -1,59 +1,82 @@
-# WebXR Whiteboard Project
+# Unity Whiteboard System
 
-A virtual whiteboard application built with Unity and WebXR, allowing users to draw in both desktop and VR environments.
+A virtual whiteboard system for Unity that allows teachers and users to draw, erase, and save their work in real-time.
 
 ## Features
 
-- Real-time drawing in both 2D (desktop) and 3D (VR) environments
-- Pen color and size customization
-- Eraser functionality
-- Compatible with WebXR headsets
-- Cross-platform accessibility via web browsers
+- Real-time drawing and erasing
+- Multiple color options
+- Adjustable brush and eraser sizes
+- Save drawings as PNG files
+- Mouse interaction visualization
+- Debug mode for development
+- Easy setup with WhiteboardSetupGuide
 
 ## Requirements
 
-- Unity 2020.3 or newer
-- WebXR Export Template for Unity
-- Compatible WebXR-enabled browsers (Chrome, Firefox, Edge with WebXR support)
-- VR headset compatible with WebXR (optional)
+- Unity 2019.4 or later
+- Universal Render Pipeline (URP) or Standard Render Pipeline
 
-## How to Use
+## Installation
 
-### Desktop Mode:
-- Left-click to draw
-- Right-click to erase
-- Use the color palette to change colors
-- Adjust pen size with the slider
+1. Clone this repository
+2. Open the project in Unity
+3. Add the WhiteboardSetupGuide component to any GameObject in your scene
+4. Click "Setup Whiteboard System" in the Inspector
 
-### VR Mode:
-- Trigger button to draw
-- B/Y button to erase
-- Use UI panel to change colors and pen size
+## Usage
 
-## Implementation
+### Basic Controls
 
-The project uses:
-- Unity's XR Interaction Toolkit
-- Custom WebXR implementation
-- Custom drawing system that works across platforms
+- **Left Mouse Button**: Draw on the whiteboard
+- **Right Mouse Button**: Erase from the whiteboard
+- **D key**: Switch to draw mode
+- **E key**: Switch to erase mode
 
-## Building and Deployment
+### UI Controls
 
-1. Open the project in Unity
-2. Go to File > Build Settings
-3. Select WebGL as the platform
-4. Click "Switch Platform" if needed
-5. Configure Player Settings for WebXR
-6. Build the project
-7. Host on a server that supports HTTPS
-8. Access via WebXR-compatible browser
+- **Color Buttons**: Select different colors for drawing
+- **Clear Button**: Clear the entire whiteboard
+- **Save Button**: Save the current drawing as a PNG image
+- **Brush Size Slider**: Adjust the size of the drawing brush
+- **Eraser Size Slider**: Adjust the size of the eraser
+- **Mouse UI Toggle**: Show/hide the mouse interaction indicator
+- **Debug Toggle**: Show/hide visual debug information
+
+## Project Structure
+
+```
+Assets/
+├── Prefabs/
+│   ├── Whiteboard.prefab       # The main whiteboard object
+│   └── WhiteboardUI.prefab     # UI controls for the whiteboard
+├── Scripts/
+│   ├── WhiteboardDrawing.cs    # Core drawing functionality
+│   ├── WhiteboardUIController.cs # UI management
+│   ├── MouseInteractionHandler.cs # Mouse input handling
+│   ├── MouseInteractionUI.cs   # Mouse UI visualization
+│   └── WhiteboardSetupGuide.cs # Easy setup tool
+└── Materials/
+    └── WhiteboardMaterial.mat  # Material for the whiteboard
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
+## Author
+
+- **80Chanchal** - [GitHub](https://github.com/80Chanchal)
+
 ## Acknowledgments
 
-- Built by Chanchal (GitHub: @80Chanchal)
-- WebXR API and standards
-- Unity Technologies
+- Unity Technologies for the game engine
+- The Unity community for inspiration and resources
