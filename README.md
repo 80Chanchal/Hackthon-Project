@@ -1,9 +1,13 @@
-# Unity Whiteboard System
+# Hackthon-Project
 
+This repository contains various projects developed during hackathons.
+
+## Projects
+
+### Unity Whiteboard System
 A virtual whiteboard system for Unity that allows teachers and users to draw, erase, and save their work in real-time.
 
-## Features
-
+#### Features
 - Real-time drawing and erasing
 - Multiple color options
 - Adjustable brush and eraser sizes
@@ -12,29 +16,25 @@ A virtual whiteboard system for Unity that allows teachers and users to draw, er
 - Debug mode for development
 - Easy setup with WhiteboardSetupGuide
 
-## Requirements
-
+#### Requirements
 - Unity 2019.4 or later
 - Universal Render Pipeline (URP) or Standard Render Pipeline
 
-## Installation
-
+#### Installation
 1. Clone this repository
 2. Open the project in Unity
 3. Add the WhiteboardSetupGuide component to any GameObject in your scene
 4. Click "Setup Whiteboard System" in the Inspector
 
-## Usage
+#### Usage
 
-### Basic Controls
-
+##### Basic Controls
 - **Left Mouse Button**: Draw on the whiteboard
 - **Right Mouse Button**: Erase from the whiteboard
 - **D key**: Switch to draw mode
 - **E key**: Switch to erase mode
 
-### UI Controls
-
+##### UI Controls
 - **Color Buttons**: Select different colors for drawing
 - **Clear Button**: Clear the entire whiteboard
 - **Save Button**: Save the current drawing as a PNG image
@@ -43,8 +43,7 @@ A virtual whiteboard system for Unity that allows teachers and users to draw, er
 - **Mouse UI Toggle**: Show/hide the mouse interaction indicator
 - **Debug Toggle**: Show/hide visual debug information
 
-## Project Structure
-
+#### Project Structure
 ```
 Assets/
 ├── Prefabs/
